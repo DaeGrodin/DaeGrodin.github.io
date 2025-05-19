@@ -74,3 +74,43 @@ body {
 .footer-email a:hover {
   color: black; 
 }
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;           /* vertical alignment */
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .image-container {
+    flex: 0 0 auto;
+    margin-bottom: 0;
+  }
+
+  .middle-text {
+    flex: 1;
+    text-align: left;
+    font-size: 20px;
+    max-width: 300px;             /* align width with image  */
+    padding: 0;
+    margin: 0;                    /* remove auto vertical margin from mobile */
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 500px;
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px 30px;
+  }
+
+  .projects,
+  .footer-email {
+    flex: 1;
+    text-align: center;
+  }
+}
